@@ -1,0 +1,38 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    //-------- Search configuration --------
+
+   // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+   "search.exclude": {
+       "**/.git": true,
+    //    "**/bazel-bazel": true,
+    //    "**/bazel-testlogs": true,
+       "**/*.o": true,
+       "**/*.d": true,
+   },
+
+   //-------- Files configuration --------
+
+   // Configure glob patterns for excluding files and folders.
+//    "files.exclude": {
+    "files.watcherExclude":{
+       "**/.git": true,
+    //    "**/bazel-out": true,
+    //    "**/bazel-bazel": true,
+    //    "**/bazel-testlogs": true,
+       "**/*.o": true,
+       "**/*.d": true,
+    },
+    // "**/bazel-(.(?!/\s(剧情|犯罪|爱情|动画|喜剧)))": true,
+    //https://stackoverflow.com/questions/30140112/how-do-i-hide-certain-files-from-the-sidebar-in-visual-studio-code
+    // https://code.visualstudio.com/Docs/editor/codebasics#_search-across-files  正则表达式
+    "files.exclude":{
+       "**/.git": true,
+    //    "**/bazel-bazel": true,
+    //    "**/bazel-testlogs": true,
+    //    "**/bazel-bin/**/*.*": true,
+       "**/*.o": true,
+       "**/*.d": true,
+    },
+    "git.ignoreLimitWarning": true,
+}
